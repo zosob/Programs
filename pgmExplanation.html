@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="John Dean">
+<title>Program Explanation</title>
+</head>
+
+<body>
+<h1>Finding the Hypotenuse</h1>
+<p>
+  The Java code fragment below shows how to calculate the
+  hypotenuse of a right triangle.
+</p>
+
+<pre><code>public static void main(String[] args)
+{
+  Scanner stdIn = new Scanner(System.in);
+  double base;
+  double height;
+  double hypotenuse;
+
+  System.out.print("Enter right triangle base: ");
+  base = stdIn.nextDouble();
+  System.out.print("Enter right triangle height: ");
+  height = stdIn.nextDouble();
+  hypotenuse = Math.sqrt(base * base + height * height);
+  System.out.println("Hypotenuse length = " + hypotenuse);
+} // end main</code></pre>
+
+<p>
+  To see how the program works, try to figure out what the output
+  will be if the input values are <kbd>3</kbd> and <kbd>4</kbd>....
+</p>
+<p>
+  The output would be: <samp>Hypotenuse length = 5</samp>.
+</p>
+
+<p>
+  The hypotenuse is calculated with the help of the Pythagorean
+  formula:<br>
+  <var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> =
+  <var>c</var><sup>2</sup>, where
+  <var>c</var> is the hypotenuse, and
+  <var>a</var> and <var>b</var> are the triangle's other two sides.
+</p>
+<p>
+  According to the
+  <abbr title="Mathematical Association of America">MAA</abbr>,
+  the Pythagorean formula is one of the <strong>top 10</strong>
+  all-time great math formulas. In his 520 BC bestseller
+  <cite>Fifty Shades of Gray Matter</cite>, Pythagoras
+  himself says it best - <q>Yeah, it's a pretty cool formula.</q>
+</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* This is a comment... */
+/* This is another comment... */
+
+/*.orange {color: darkorange;}*/
+.eggplant {color: rgba(74, 51, 133, 0.505);} /* take a look at this. */
+.white {color: white;}
+.black {color: black;}
+.orange-background {background-color:orange;}
+
+h2 {font-variant: small-caps;}
+.bold {font-weight: bold;}
+.huge-font {font-size: xx-large;}
+body {font-family: Courier, monospace;}
+
+h1{border: thin dotted blue;}
+h2{border: 10px solid;}
+
