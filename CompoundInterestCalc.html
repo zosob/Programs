@@ -5,6 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Bhaskar Ghosh">
     <title>Compound Interest</title>
+    <script src="compoundInterest.js"></script>
+    <style>
+        .table{
+            display: table;
+        }
+        .row{
+            display: table-row;
+        }
+
+        .row > *{
+            display: table-cell;
+        }
+
+        .table{
+            border-spacing: 0 3px;
+        }
+
+        .row>:first-child{
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        table{
+            text-align: center;
+        }
+
+        table, th, td{
+            border:none;
+        }
+        th{
+            background-color: midnightblue;
+            color: white;
+            padding: 10px;
+        }
+
+        td{
+            background-color: mistyrose;
+        }
+
+    </style>
 </head>
 <body>
     <h3>Compound Interest Calculator</h3>
@@ -22,5 +62,9 @@
         <input type="number" id="years" min="1" max ="20" step="1" required>
     </div>
     </form>
+    <br>
+    <input type="button" form="input" value="Generate Compound Interest" onclick="generateTable(this.form);">
+    <br><br>
+    <div id="result"></div>
 </body>
 </html>
